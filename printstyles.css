@@ -1,0 +1,24 @@
+@media print{
+    nav, footer{
+        display: none !important;
+    }
+    .tables table, .tables th, .tables td{
+        border: 0 !important;
+    }
+    form{
+        border: 0 !important;
+    }
+    fieldset{
+        border: 1px solid black;
+    }
+    img.screen{
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+
+    .border{
+        border: 1px solid black;
+        width: 100%;
+        display: block;
+    }
+}

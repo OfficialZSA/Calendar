@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Author: Zaid A.Yusuf -->
+        <title>Outdoor Adventure Reviews</title>
+        <link rel="stylesheet" href="adventurestyles.css">
+        <link rel="stylesheet" href="mobile.css">
+        <link rel="stylesheet" href="printstyles.css">
+    </head>
+
+    <body>
+		<header>
+			<h1>Outdoor Adventure Reviews <br>2022/2023</h1>
+		</header>
+		<nav>
+			<a href="#" class="nav-links">About Us</a>
+			<a href="#" class="nav-links">Travel</a>
+			<a href="#" class="nav-links">Photos</a>
+			<a href="#" class="nav-links">Shop</a>
+			<a href="reviews.html" class="nav-links">Reviews</a>
+			<a href="seminars.html" class="nav-links">Seminars</a>
+			<a href="#" class="nav-links">Events</a>
+		</nav>
+		<main>
+			<form
+				action="https://csunix.mohawkcollege.ca/tooltime/showit.pl">
+				<fieldset>
+					<input type="hidden" name="formname" value="Zaid's Trip Review">
+					<legend> About You</legend>
+					<p> I usually prefer to trips this time of year ( select
+						all that apply )</p>
+					<select name="pref" multiple>
+						<option value="winter">winter</option>
+						<option value="spring">spring</option>
+						<option value="summer">summer</option>
+						<option value="fall">fall</option>
+					</select>
+					<table class="labelform">
+						<tr>
+							<td class="label1"><label for="first-name">First
+									Name</label></td>
+							<td class="label2"><input type="text"
+									id="first-name" name="first-name" maxlength="20"></td>
+						</tr>
+						<tr>
+							<td class="label1"><label for="last-name">Last Name</label></td>
+							<td class="label2"><input type="text"
+									id="last-name" name="last-name" maxlength="20"></td>
+						</tr>
+						<tr>
+							<td class="label1"><label for="phone">Phone Number</label></td>
+							<td class="label2"><input type="tel" id="phone"
+									name="phone" placeholder="123-456-7890" maxlength="12"></td>
+						</tr>
+						<tr>
+							<td class="label1"><label for="emailaddress">Email Address</label></td>
+							<td class="label2"><input type="email" id="emailaddress"
+									name="emailaddress"
+									placeholder="name@example.com" maxlength="40"></td>
+						</tr>
+					</table>
+				</fieldset>
+				<fieldset>
+					<legend>Trip Reviews</legend>
+					<select name="travels">
+						<option value="Alberta Rural">Alberta Rural</option>
+						<option value="B.C.Coast" selected>B.C.Coast</option>
+						<option value="summer">Ontario lake superior</option>
+						<option value="PEI">PEI</option>
+						<option value="Nova Scotia Cabot Trail">Nova Scotia
+							Cabot Trail</option>
+					</select>
+					<select name="duration">
+						<option value="5d">5 Days</option>
+						<option value="7d">7 days</option>
+						<option value="10d">10 Days</option>
+						<option value="14d">14 Days</option>
+					</select>
+					<p class="travels">Your Rating:</p>
+					<label><input type="Radio" name="rating"
+							value="4" checked><img src="wheel_sm.jpg" alt="wheel"><img
+							src="wheel_sm.jpg" alt="wheel"><img
+							src="wheel_sm.jpg" alt="wheel"><img
+							src="wheel_sm.jpg" alt="wheel"></label>
+					<br>
+					<label><input type="Radio" name="rating"
+							value="3"><img src="wheel_sm.jpg" alt="wheel"><img
+							src="wheel_sm.jpg" alt="wheel"><img
+							src="wheel_sm.jpg" alt="wheel"></label>
+					<br>
+					<label><input type="Radio" name="rating"
+							value="2"><img src="wheel_sm.jpg" alt="wheel"><img
+							src="wheel_sm.jpg" alt="wheel"></label>
+					<br>
+					<label><input type="Radio" name="rating"
+							value="1"><img src="wheel_sm.jpg" alt="wheel"></label>
+					<P class="trip">Comment</P>
+					<textarea name="comments" cols="65" rows="7"></textarea>
+					<br>
+				</fieldset>
+				<fieldset>
+					<legend> I would be interested in these trips</legend>
+					<label>
+						<input type="checkbox" name="interested" value="Sea or
+						Lake Coast"> Sea or Lake Coast</label><br>
+					<label class="border"><input type="checkbox" name="interested" value="Rural"> Rural</label><br>
+					<label class="border"><input type="checkbox" name="interested"
+						value="Mountain" checked> Mountain</label><br>
+					<label class="border"><input type="checkbox" name="interested" value="other"> other</label>
+					<label class="border">(Please specify)</label>
+					<textarea name="other_destination" id="" cols="30"
+						rows="1"></textarea>
+				</fieldset>
+				<p class="button"><button type="submit">Send Review</button>
+					<button type="reset">Cancel</button></p>
+			</form>
+			<img class="visuals" src="visuals.png" alt="Screen shot">
+		</main>
+		<footer>
+			<img src="outdooradventurehorizontal.png" alt="Logo">
+		</footer>
+    </body>
+
+</html>
